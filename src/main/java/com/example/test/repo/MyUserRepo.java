@@ -1,11 +1,11 @@
 package com.example.test.repo;
 
-import com.example.test.entity.User;
+import com.example.test.entity.MyUser;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepo extends CrudRepository<User, Long> {
+public interface MyUserRepo extends CrudRepository<MyUser, Long> {
 
-    User findByUsername(String username);
+    MyUser findByUsername(String username);
 }
